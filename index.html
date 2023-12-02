@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Content Example</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Recommended Sports</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li onclick="changeContent('home')">首頁</li>
+            <li onclick="changeContent('page1')">踢拳擊</li>
+            <li onclick="changeContent('page3')">花式滑冰</li>
+            <li onclick="changeContent('page2')">高爾夫球</li>
+            <li onclick="changeContent('page4')">游泳</li>
+        </ul>
+    </nav>
+
+    <section class="equal-sized-images">
+        <div class="text-container" id="content">
+            <h2>動機Motivation</h2>
+            <p>由於大家的課業、工作日漸繁忙</p>
+            <p>除了久坐和飲食不健康之外</p>
+            <p>也順帶影響了我們的心理健康</p>
+            <p>運動不只為了身體健康</p>
+            <P>也會促進人體內的多巴胺，讓我們的心情維持在積極的狀態下</P>
+            <p>而近年來大家逐漸開始重視運動</p>
+            <p>更是為了獲得良好的身材體態</p>
+            <h3>今天我們的網站將為大家介紹我們喜愛的四種運動</h3>
+            <ul>
+                <li>踢拳擊</li>
+                <li>花式滑冰</li>
+                <li>高爾夫球</li>
+                <li>游泳</li>
+            </ul>
+            <h4>希望大家看完後，能更深入地了解這四種運動!並希望大家能多多運動，強身健體，每一天心情都很美麗。</h4>
+            <img src="https://i.pinimg.com/originals/be/29/e6/be29e644002a48d57e4fe9f6976e285c.gif">
+            
+
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Web三人小組</p>
+    </footer>
+
+    <script>
+        function changeContent(page) {
+            var textContainer = document.getElementById("content");
+    
+            switch (page) {
+                case 'home':
+                    textContainer.innerHTML = 
+                    `
+                    <h2>動機Motivation</h2>
+                        <p>由於大家的課業、工作日漸繁忙</p>
+                        <p>除了久坐和飲食不健康之外</p>
+                        <p>也順帶影響了我們的心理健康</p>
+                        <p>運動不只為了身體健康</p>
+                        <P>也會促進人體內的多巴胺，讓我們的心情維持在積極的狀態下</P>
+                        <p>而近年來大家逐漸開始重視運動</p>
+                        <p>更是為了獲得良好的身材體態</p>
+                        <h3>今天我們的網站將為大家介紹我們喜愛的四種運動</h3>
+                        <ul>
+                            <li>踢拳擊</li>
+                            <li>花式滑冰</li>
+                            <li>高爾夫球</li>
+                            <li>游泳</li>
+                        </ul>
+                        <h4>希望大家看完後，能更深入地了解這四種運動!並希望大家能多多運動，強身健體，每一天心情都很美麗。</h4>
+                        <img src="https://i.pinimg.com/originals/be/29/e6/be29e644002a48d57e4fe9f6976e285c.gif">
+
+
+                    `;
+                    break; // 添加 break 以終止 switch 執行
+    
+                case 'page1':
+                    textContainer.innerHTML = 
+                    `  
+                            <h1>踢拳擊Kick Boxing</h1>
+                            <h3>什麼是踢拳擊?</h3>
+                            <p>踢拳擊是結合了拳擊與踢擊。這項運動將會學習靈活的拳法、踢腿和膝撞動作，訓練手腳協調，並有效地燃燒脂肪。</p>
+                            <img src="https://i.pinimg.com/originals/ce/da/8e/ceda8e080a6a950583f1c85672abebac.gif">
+
+
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h2>踢拳擊常見的動作解說</h2>
+                                    <h3>基本可以分為四個動作基礎</h3>
+                                    <ul>
+                                        <li>直拳</li>
+                                        <li>鉤拳</li>
+                                        <li>踢腿</li>
+                                        <li>膝撞</li>
+                                    </ul>
+
+                                    <h3>直拳</h3>
+                                    <img src="https://i.pinimg.com/originals/3e/04/e7/3e04e790cd3a651028200e4c28821585.gif">
+                                    <p>包括：直拳、左直拳、右直拳等</p>
+                                    <p>直拳是拳擊技術中最基本的拳法，也是拳擊運動員最常用的拳法。此拳法在單位時間內連續出拳數量比其他拳法多，特別是左直拳的連續直擊動作。</p>
+                                    <img src="https://i.pinimg.com/564x/a0/3f/ab/a03fab01de3d8356ba61f7925d642a6b.jpg">
+                                    <p>直拳練習時要注意以下幾點:</p>
+                                    <ul>
+                                        <li>拳要直線擊出，直線收回</li>
+                                        <li>擊打和退回的速度要同樣快速、敏捷</li>
+                                        <li>出拳時要利用蹬地轉筋力量的配合</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h2>鉤拳</h2>
+                                    <img src="https://th.bing.com/th/id/R.c4d61347c612f53c3245453701025612?rik=jJ3wok9nvawxTQ&riu=http%3a%2f%2fwww.physical-arts.com%2ftraining%2ftechniques%2fimages%2fim_back_fist.gif&ehk=cx2rdbv4m7o6yjI%2fZtsvhfYfgGGsLFAjTJNYxrRxNIw%3d&risl=&pid=ImgRaw&r=0" alt="Page 1 Image">
+                                    <p>包括：左鉤拳、右鉤拳、上鉤拳等</p>
+                                    <ul>
+                                        <li>左腳用力蹬地，左腿儘量伸直</li>
+                                        <li>出拳時要利用蹬地轉筋力量的配合</li>
+                                        <li>左髖猛力向前上伸展</li>
+                                        <li>在擊打時右腳跟向內轉動</li>
+                                        <li>為獲得良好的發力姿勢，右肩要略超過左肩</li>
+                                        <img src="https://media.giphy.com/media/l46CgJu9TqB3Vswgg/giphy.gif">
+                                    </ul>
+                                    
+                                </div>
+                            </section>
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h2>踢腿</h2>
+                                    <img src="https://i.pinimg.com/originals/03/ae/91/03ae91e8f6c1872cf68d603198ed8fb9.gif">
+                                    <p>控制踢擊高度的，主要是髖關節的外展活動幅度及膝關節所處高度；控制踢擊方向的，則是重心腳、髖關節和膝關節的轉動幅度。</p>
+                                    <p>一般踢技總括而言，可分為上、中、下三個高度</p>
+                                </div>
+                            </section>
+                           
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h2>膝撞</h2>
+                                    <img src="https://i.pinimg.com/originals/70/3d/1e/703d1e1c14ec57f2aa9709a5d793466f.jpg""
+                                    <ul>
+                                        <li>衝膝練習</li>
+                                        <li>練屈膝前撞</li>
+                                        <li>力發自臀部前挺</li>
+                                    </ul>
+                                    <p>在近身扭鬥時，以手緊箍對方頸項力拽，同時發膝撞向胃腹、肋部、胸膛，而至下頷，稱為「內圍膝撞」</p>
+                                    <p>中距離的衝擊，以雙手開路或作掩護，膝招發擊可採用任何角度，稱為「拋膝」</p>
+                                    
+                                </div>
+                            </section>
+
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h2>為什麼要學習踢拳擊?好處有什麼</h2>
+                                    <p>踢拳是一項全身性的運動，涵蓋了上半身和下半身的許多肌肉群。透過練習踢拳，你可以增強肌肉力量、耐力和靈活性。</p>
+                                    <p>可以提供一定程度的自我防衛技能。這包括學習如何應對潛在的威脅，保護自身的安全。</p>
+                                    <img src="https://i.pinimg.com/originals/d7/97/23/d79723c18acdc42bd8f33115488cd80f.gif"
+
+                                    
+                                </div>
+                            </section>
+                            
+                    `;
+                
+                    break;
+                case 'page2':
+                textContainer.innerHTML = 
+                    `  
+                            <h1>高爾夫Golf</h1>
+                            <h3>什麼是高爾夫?</h3>
+                            <p>簡單來說，高爾夫就是一種將球擊入球洞的方式為目標的運動。</p>
+                            <p>但儘管規則聽起來很簡單，實則想要將球打進好幾米開外的球洞，是非常不容易的事情。</p>
+                            <img src="https://i.pinimg.com/originals/0c/d2/ae/0cd2aedb8d74733995e70b15fb5f66a3.gif">
+                            
+
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <section class="page1-images">
+                                <div class="text-container">
+                                    <h2>高爾夫的基本介紹</h2>
+                                    <h3>高爾夫球的組成可以分成五種要素</h3>
+                                    <ul>
+                                        <li>比賽形式</li>
+                                        <li>球場和球洞</li>
+                                        <li>擊球</li>
+                                        <li>障礙</li>
+                                        <li>懲罰</li>
+                                    </ul>
+                                    <h3>比賽形式</h3>
+                                    <p>高爾夫比賽的形式可以分成四大類</p>
+                                    <ul>
+                                        <li>擊球數賽</li>
+                                        <li>比杆賽</li>
+                                        <li>四球賽</li>
+                                        <li>混合四球賽</li>
+                                    </ul>
+                                    <p>而比賽形式將會決定球手之間的競爭方式。</p>
+                                </div>
+                            </section>
+                                    
+
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h3>球場和球洞</h3>
+                                    <p>高爾夫球場由18個球洞組成。每個球洞都有一個發球區和一個目標區域(球洞)</p>
+                                    <img src="https://th.bing.com/th/id/R.cc87326293aa58faac4e88e8d11ca168?rik=EA6NiuDCdbxrRA&pid=ImgRaw&r=0">
+                                    
+                                </div>
+                            </section>
+
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h3>擊球</h3>
+                                    <img src="https://i.pinimg.com/originals/49/48/64/4948647b2031dfe54f37eadaa4aee1fd.gif">
+                                    <p>球手可以在球場上的不同位置進行擊球，目標是將球擊進洞中。</p>
+                                </div>
+                            </section>
+                           
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h3>障礙</h3>
+                                    <img src="https://i.pinimg.com/564x/8b/3a/70/8b3a70b7c39d315572880d2d4b7d8dc8.jpg">
+                                    <p>球場中的地形可能有各種障礙，如沙坑、水域。</p>
+                                    <img src="https://uvci.s3.amazonaws.com/uploads/image/image/296/beginner-set-of-golf-clubs.jpg">
+                                    <p>球手需要適應這些障礙，並使用"不同"的球桿進行擊球。</p>
+                                </div>
+                            </section>
+
+                                <section class="page1-images">
+                                <div class="text-container">
+                                    <h3>懲罰</h3>
+                                    <p>若球手將球在特定的情況下落在了不利位置，便可能會受到懲罰杆的處罰，這會增加選手的擊球數。</p>
+                                    <p>總而言之，高爾夫的目標是以最少的擊球數完成球場上的18個球洞，並且必須遵守比賽的規則和形式。</p>                                    
+                                </div>
+                                
+                            </section>
+
+                            <h2>高爾夫的擊球動作解說</h2>
+                                    <p>高爾夫的擊球動作是連串看似簡單，卻非常需要技巧與大量練習的動作。</p>
+                                    <p>而我們將打高爾夫球的動作簡單分解成以下四點：</p>    
+                                    <ul>
+                                        <li>站姿和握杆</li>
+                                        <li>擺動</li>
+                                        <li>轉臀、轉肩</li>
+                                        <li>擊球</li>
+                                    </ul>
+                                    <h3>站姿和握杆</h3>
+                                        <p>站在球旁，雙腳與肩同寬，膝蓋微微彎曲，上半身輕微前傾</p>
+                                        <img src="https://i.pinimg.com/564x/02/58/5b/02585b74e5d3a74be9ccd8f92e802d90.jpg">
+                                    
+                                    <h3>擺動</h3>
+                                        <p>擺動的動作有個兩個要點</p>
+                                        <ul>
+                                            <li>起擺動</li>
+                                                <p>將球杆擺到身體的一側，形成起擺的動作。</p>
+                                                <li>下擺動</li>
+                                                <p>迅速轉動身體，使球桿橫越身體中線，同時瞄準擊球的方向。</p>
+                                                <img src="https://cdn.mos.cms.futurecdn.net/N9QGWs2ZDB8jR45GXymEmZ-1280-80.jpg">
+                                                
+                                            
+                                        </ul>
+
+                                    <h3>轉臀、轉肩</h3>
+                                        <p>隨著下擺動，腰部和肩膀進行旋轉，增加擊球時的力量和穩定性。</p>
+                                        <img src="https://i.pinimg.com/564x/8d/0b/87/8d0b87793a32e842700c2b4589effafd.jpg">
+                                        
+                                        
+                                    <h3>擊球</h3>
+                                        <p>轉動的過程中，球桿迅速下擊，擊中高爾夫球。</p>
+                                        <p>擊球時要保持平穩，注意擊球的正確位置和姿勢。</p>
+                                        <img src="https://i.pinimg.com/originals/97/62/bf/9762bf9a11742a537f12f5a846c5976e.gif">
+
+                                        <h4>總的來說</h4>
+                                        <p>我們只介紹了高爾夫球的基本動作分解，實際上每一個階段都需要精湛的技術和配合。</p>
+                                        <p>因為高爾夫球運動注重動作的流暢性、平衡感和精準，因此需要不斷練習才能提升技巧的熟練度。</p>
+                                </div>
+                                
+                            </section>
+
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h3>為什麼要打高爾夫?</h3>
+                                    <p>高爾夫這項運動比起其他運動來說，受傷率較低。</p>
+                                    <p>而也因為擊球運用到的身體部位多為上半身居多，對踝關節和膝關節的影響較小。
+                                       而高爾夫球除了是一種有氧運動，能增進心肺功能之外，也因為高爾夫球場的環境寧靜舒適，有緩解壓力、提升心理健康的功效，是一個絕佳的運動選擇。</p>
+                                       <img src="https://i.pinimg.com/originals/2f/29/48/2f29485940fed8f93ea281afa2f93042.gif">
+                                       
+                                </div>
+                                
+                            </section> 
+                    `;
+                    break;
+                case 'page3':
+                textContainer.innerHTML = 
+                    `  
+                            <h1>花式滑冰Figure Skating</h1>
+                            <h3>什麼是花式滑冰?</h3>
+                                <p>花式滑冰是一種在冰上進行的藝術性和技巧性兼具的運動。</p>
+                                <p>是由單人、雙人或團體組合而成，以冰刀在冰面表演技術動作的體育活動。</p>
+                                <p>現有四種奧運競賽項目包括男子單人滑、女子單人滑、雙人滑以及冰舞。</p>
+                               <img src="https://i.pinimg.com/originals/15/76/67/1576670b309dc41ae9450acf293f8864.gif">
+
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h2>花式滑冰的動作解說</h2>
+                                    <p>花花式滑冰是一項藝術性和技巧性極高的運動，其中包含了多種複雜的動作。</p>
+                                    <P>而其中可以分成四個類別</p>
+                                    <ul>
+                                        <li>滑步和滑行</li>
+                                        <li>跳躍</li>
+                                        <li>旋轉</li>
+                                        <li>冰面圖形</li>
+                                    </ul>
+
+                                    <h3>滑步和滑行</h3>
+                                    <p>選手進行優雅的滑步和滑行，以展現動作的流暢性和舞蹈感。滑步涉及不同的步伐和轉彎，
+                                       需要精確的技巧和平穩的冰面掌控。</p>
+                                    <img src="https://i.pinimg.com/originals/5a/56/72/5a567280a8eb723f043d311a42c85816.gif">
+
+                                    <h3>跳躍</h3>
+                                    <p>跳躍時，選手需要迅速轉動身體，以獲得足夠的空中時間，同時保持優雅的姿勢。</p>
+                                    <p>在跳躍過程中的空中轉體動作，又可分為一周跳、兩周跳、三周跳和四周跳。</p>
+                                    <p>周數越多難度越高。</p>
+                                    <img src="https://imagepphcloud.thepaper.cn/pph/image/178/790/110.jpg">
+                                    
+                                    <h3>旋轉</h3>
+                                    <p>選手需要在旋轉時保持身體姿勢穩定，旋轉速度和轉動的角度是表現技巧的關鍵。</p>
+                                    <img src="https://i.pinimg.com/originals/d3/50/bd/d350bda04ea6879073fd3f188eaa73db.gif">
+                                    <p>選轉的種類有很多，這裡列出了三種常見的旋轉動作。</p>
+                                    <ul>
+                                        <li>單足旋轉</li>
+                                        <li>多足旋轉</li>
+                                        <li>蹲踞旋轉</li>
+                                    </ul>
+                                    <p>以下便是蹲踞旋轉(sit spin)的動作</p>
+                                    <img src="https://media3.giphy.com/media/SSEBtcaZSnWkv6B7Ez/giphy.gif">
+
+                                    
+
+                                    <h3>冰面圖形</h3>
+                                    <p>選手通常需要在冰面上畫出各種複雜的圖案和軌跡，以增添表演的視覺效果。</p>
+                                    <img src="https://i.pinimg.com/originals/68/d4/99/68d4992225773c86cd6796482bde07c7.gif">
+                                    <h4>由此可知</h4>
+                                    <p>花式滑冰是一項綜合性的運動，要求選手具備卓越的技術和表演能力。透過不斷的練習和對動作的精進，選手可以呈現出高度精湛的花式滑冰表演。</p>
+                                </div>
+                            </section>
+                               
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h2>花式滑冰的評比方式</h2>
+                                    <p>花式滑冰包括各種獨特的動作、旋轉、跳躍和舞蹈，運動員通過在冰上展示優雅的動作和技巧，來贏得裁判和觀眾的讚譽。</p>
+                                    <P>可大致分為三項</p>
+                                    <ul>
+                                        <li>技術動作</li>
+                                        <li>藝術表現</li>
+                                        <li>競賽結構</li>
+                                    </ul>
+                                    <h3>技術動作</h3>
+                                    <img src="https://i.pinimg.com/originals/e6/7f/93/e67f93df8fdae7d7cc03a96778da6e6d.gif">
+                                    <p>選手在比賽中必須完成一系列的技術動作，這包括跳躍（例如三周躍）、旋轉（例如單腳和多腳旋轉）和其他具有技巧性的動作。</p>
+                                </div>
+                            </section>
+
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h3>藝術表現</h3>
+                                    <p>花式滑冰強調藝術性，裁判會評價選手的表現，包括動作的優雅程度、舞蹈的表現力、與音樂的協調等。這一部分的分數通常稱為「藝術分」。</p>
+                                    <p> 選手在比賽中必須選擇適合的音樂，並將動作與音樂相協調。音樂選擇要能夠突顯選手的個性和技術能力。</p>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-cwQ-nAm1qQ?si=EdN1iWBXSEvOvXeA" 
+                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                    encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </section>
+                           
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h3>競賽結構</h3>
+                                    <p>花式滑冰比賽通常分為短節目和自由滑兩個部分。短節目強調技術動作，而自由滑則突出藝術表現。</p>
+                                    <h4>短節目</h4>
+                                    <p>是花式滑冰單人、雙人滑與團體滑項目現行競賽內容中的第一項。表演時間較自由滑來得短。</p>
+                                    <h4>自由滑</h4>
+                                    <p>是花式滑冰競賽中的第二項。表演時間較短曲項目來得長。</p>
+                                    <h4>競賽總分</h4>
+                                    <p>滑冰選手的總分是兩個部分得分的總和。</p>
+                                    
+                                </div>
+                            </section>
+
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h3>花式滑冰的好處</h3>
+                                    <p>滑冰運動可全面鍛煉身體各部位的肌肉，包括腿部、核心，與此同時也提升了心肺功能。</p>
+                                    <p>再加上時常運用到高難度動作，而有助於提高協調和平衡能力</p>
+                                    <p>而也因為它長時間練習和精進的運動，也可以培養我們的毅力和耐心。</p>
+                                    <p>所以，花式滑冰除了提供身體鍛煉外，還有助於個人成長，也是一個非常好的運動選擇。</p>
+                                    <img src="https://i.pinimg.com/originals/b4/2d/a6/b42da666be6fa4abf71f4d90d61483b7.gif">
+                                    
+                                </div>
+                                
+                            </section>  
+                    `;
+                    break;
+                case 'page4':
+                textContainer.innerHTML = 
+                    `  
+                            <h1>游泳Swimming</h1>
+                            <h3>什麼是游泳?</h3>
+                            <p>游泳是一種在水中移動的運動形式，會使用手臂和腿部來推進身體。</p>
+                            <img src="https://i.pinimg.com/originals/64/db/c7/64dbc7180a03cb24628597dbc85737ae.gif">
+                            
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h2>游泳的種類與動作解說</h2>
+                                    <p>常見的游泳類型可分為四種。</p>
+                                    <ul>
+                                        <li>捷泳</li>
+                                        <li>仰泳</li>
+                                        <li>蛙泳</li>
+                                        <li>蝶泳</li>
+                                    </ul>
+                                    <h3>捷泳(自由式)</h3>
+                                    <img src="https://i.pinimg.com/originals/55/71/6a/55716a785271be047265665ad469cddb.gif" alt="Page 1 Image">
+                                    <p>捷泳又俗稱自由式。因為動作結構比較合理，省力，並且阻力較小，是至今為止所發現的人類泳姿中最快的一種。</p>
+                                    <p>捷泳是四種泳姿裡唯一被國際游泳總會管制的泳姿。</p>
+                                    
+                                    <h4>捷泳動作解說</h4>
+                                    <ul>
+                                        <li>手臂划水</li>
+                                            <p>伸直的手臂開始向外側展開，形成一個大圈。手臂在水中迅速下壓，形成有效的划水動作。
+                                               手臂划過身體，然後彎曲，準備下一次換氣和划水。</p>
+                                        <li>腿部動作</li>
+                                            <p>腿部呈輕微彎曲狀態，進行快速的踢腿動作。
+                                               腳趾伸直，整個腿部動作應該來自腰部，而非單純的膝蓋彎曲。</p>
+                                        <li>換氣</li>
+                                            <p>當一側手臂伸直向前時，頭部轉向另一側，迅速吸氣。
+                                               注意頭部轉動的角度，保持身體在水中的平衡。</p>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </section>
+
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h3>仰泳</h3>
+                                    <img src="https://i.pinimg.com/originals/b1/1c/87/b11c87ab8fc17322b6d198c01c998053.gif">
+                                    <p>仰泳，顧名思義是仰臥於水面的游泳姿勢。主要有「反捷泳」、「反蛙泳」這兩種分類。</p>
+                                    <p>仰泳時口鼻要一直處於水面上，呼吸便利，但是無法確定行進方向，會容易有定向困難的問題。</p>
+                                    <p>仰泳在游泳比賽當中，是唯一一個需要在水裡開始的泳姿，其他類型的泳姿都容許跳水起步。</p>
+                                    
+                                    <h4>仰泳動作解說</h4>
+                                    <ul>
+                                        <li>手臂划水</li>
+                                            <p>雙手臂做出圓形的划水動作，以推動身體向後移動。</p>
+                                        <li>腿部動作</li>
+                                            <p>雙腿做出連續的蛇形踢腿動作，協助身體的推進。。</p>
+                                        <li>換氣</li>
+                                            <p>運用頸部的轉動，將一側的耳朵和一眼露出水面，進行呼吸。</p>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h3>蛙泳</h3>
+                                    <img src="https://i.pinimg.com/originals/09/23/30/092330c11a5a47dc941adb57a096e01d.gif" alt="Page 1 Image">
+                                    <p>蛙泳又俗稱蛙式，顧名思義是模仿青蛙游泳的一種游泳姿勢。</p>
+                                    <p>蛙泳是所有游泳泳姿速度最慢的一種，但也因此擁有充裕的時間調整速度，觀察距離，非常適合長距離游泳。</p>
+                                    <p>與仰泳不同，這種姿勢可以讓游泳著保持頭部前進，方便觀察行進的前方是否有障礙物。</p>
+                                
+                                    <h4>蛙泳動作解說</h4>
+                                    <ul>
+                                        <li>手臂划水</li>
+                                            <p>雙手臂同時向外展開，形成一個大圓圈，以推動水向兩側。</p>
+                                            <p>接著雙手同時向內收攏，準備進行下一次划水。</p>
+                                        <li>腿部動作</li>
+                                            <p>腿部動作包括向外推開，再向內收攏，形成類似蛙腳踢水的動作。</p>
+                                        <li>換氣</li>
+                                            <p>每次手臂向外展開的同時進行呼吸。</p>
+                                    </ul>
+                                </div>
+                            </section>
+                           
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h3>蝶泳(海豚式)</h3>
+                                    <img src="https://i.pinimg.com/originals/c5/4d/17/c54d17cc71c864c791a341e334549195.gif" alt="Page 1 Image">
+                                    <p>蝶泳又俗稱海豚泳，是由蛙泳演變而來。</p>
+                                    <p>蝶泳這種泳姿是兩臂划水到大腿後提出水面然後從空中前移，手臂在頭前入水完成一次划水循環，因為這種泳姿的外型像蝴蝶，因而得名蝶泳。</p>
+                                    <p>因為想要保持速度一致、提高游泳速度，模仿海豚擊水波浪的動作，又被人們稱為海豚泳。</p>
+                                
+                                       <h4>蝶泳動作解說</h4>
+                                    <ul>
+                                        <li>手臂划水</li>
+                                            <p>雙臂同時從水面向前伸展，形成一個大圓圈。</p>
+                                            <p>手臂迅速收攏，然後向外側劃開水，形成大幅的「Y」字型。</p>
+                                        <li>腿部動作</li>
+                                            <p>腿部動作包括類似蛙腳的蹬水，但更為強力而有力。</p>
+                                            <p>雙腿快速彎曲，再迅速踢開水，形成強有力的蝶腳動作。</p>
+                                        <li>換氣</li>
+                                            <p>開始時，蝶泳者將臉伸入水中，做出下沉動作。</p>
+                                            <p>然後迅速抬起頭部，進行呼吸，呼吸通常在頭部抬起的瞬間進行。</p>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <section class="page1-images">
+                                <div class="text-container">
+                                    <h3>為什麼要學習游泳?它的好處有哪些?</h3>
+                                    <p>游泳是鍛鍊整個身體和心血管系統的絕佳方式。不同於其他陸地上的運動，游泳可以讓我們直接吸入氧氣，並在運動的過程中會運用到全身的肌肉。</p>
+                                    <p>並且有研究表明，遊泳比短跑更有效率地幫助肌肉的訓練，並降低中風機率。而對於有傷病、關節炎和其他疾病的人，游泳也是一種可以安全鍛鍊的選擇。</p>
+                                    <p>總而言之，游泳是一種老小皆適宜的一項運動，不知道該怎麼選擇做哪一項運動時，便可以考慮看看遊泳這項選擇。</p>
+                                    <img src="https://i.pinimg.com/originals/1b/60/98/1b60985374b93f5a666e13ccf72b772a.gif">
+                                </div>
+
+                            </section>  
+                    `;
+                    break;
+                
+                default:
+                    textContainer.innerHTML = "<p>Page not found.</p>";
+            }
+        }
+    </script>
+    
+</body>
+</html>

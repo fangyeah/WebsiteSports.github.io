@@ -1,0 +1,76 @@
+
+
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #eee;
+    padding: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    cursor: pointer;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    display: grid;
+}
+
+.equal-sized-images {
+    display: flex; /* 使用 Flexbox 進行排列 */
+    align-items: center; /* 將內容垂直置中 */
+}
+
+
+.equal-sized-images img {
+    width: 100%; /* 設定相同的寬度 */
+    height: 300;
+    object-fit: cover; /* 保持寬高比例並填充整個容器 */
+    display: block;
+}
+
+.text-container {
+    grid-column: span 2; /* 文字占滿兩列 */
+}
+
+ul {
+    list-style-type: square; /* 使用實心方塊作為無序列表符號 */
+}
+
+li {
+    margin-bottom: 10px; /* 底部間距 */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
